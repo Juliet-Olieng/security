@@ -10,6 +10,7 @@ import com.julietolieng.hackathon1.ui.AuthViewModelFactory
 import com.julietolieng.hackathon1.ui.HomeFragment
 import com.julietolieng.hackathon1.ui.LoginFragment
 import com.julietolieng.hackathon1.ui.SplashFragment
+import com.julietolieng.hackathon1.ui.utils.openFragment
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
@@ -24,24 +25,17 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
                 isLoggedIn?.let { loggedIn ->
                     showFirstFragment(loggedIn)
                 } ?: run {
-                    openFragment(SplashFragment())
+                    supportFragmentManager.openFragment(SplashFragment())
                 }
             }
         }
     }
 
-
     private fun showFirstFragment(isLoggedIn: Boolean) {
         if (isLoggedIn) {
-            openFragment(HomeFragment())
+            supportFragmentManager.openFragment(HomeFragment())
         } else {
-            openFragment(LoginFragment())
+            supportFragmentManager.openFragment(LoginFragment())
         }
-    }
-
-    private fun openFragment(fragment: Fragment) {
-        supportFragmentManager.beginTransaction()
-            .replace(R.id.content, fragment)
-            .commit()
     }
 }
