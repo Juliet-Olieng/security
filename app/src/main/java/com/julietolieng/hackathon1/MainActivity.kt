@@ -21,10 +21,7 @@ class MainActivity : AppCompatActivity() {
             val intent=Intent(this,Login_Activity::class.java)
             startActivity(intent)
         }
-        binding.btnReport.setOnClickListener {
-            val intent=Intent(this,Register::class.java)
-            startActivity(intent)
-        }
+
 
 
 

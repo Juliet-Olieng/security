@@ -7,9 +7,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilFNaame"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:hint="Input First Name"
@@ -26,9 +26,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilLName"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -44,11 +44,11 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilEmails"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="32dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
-        android:layout_marginEnd="32dp"
+        android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilLName">
@@ -62,9 +62,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilNumber"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         app:layout_constraintEnd_toEndOf="parent"
@@ -80,9 +80,9 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilGender"
-        android:layout_width="409dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="16dp"
         android:hint="Input Gender"
@@ -103,7 +103,9 @@
         android:layout_height="88dp"
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:text="Incident"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilGender" />
 

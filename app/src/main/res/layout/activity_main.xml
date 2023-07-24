@@ -7,12 +7,15 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilFirstName"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
         android:layout_marginBottom="520dp"
         android:hint="First Name"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -24,11 +27,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilLasName"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="16dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
         android:hint="Last Name"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilFirstName">
 
@@ -40,11 +45,13 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilEmail"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
         android:hint="Input Email"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilLasName">
 
@@ -56,10 +63,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilPassword"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="16dp"
         android:hint="input Password"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilEmail">
 
@@ -71,10 +80,12 @@
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/TilConfirmPassword"
-        android:layout_width="380dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
+        android:layout_marginStart="24dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/TilPassword">
 
@@ -99,7 +110,7 @@
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="64dp"
+        android:layout_marginStart="40dp"
         android:layout_marginTop="60dp"
         android:text="already have an account "
         app:layout_constraintStart_toStartOf="parent"
@@ -109,19 +120,10 @@
         android:id="@+id/btnLogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginStart="48dp"
-        android:layout_marginTop="92dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="124dp"
         android:text="Login"
         app:layout_constraintStart_toEndOf="@+id/textView"
         app:layout_constraintTop_toBottomOf="@+id/TilConfirmPassword" />
 
-    <Button
-        android:id="@+id/btnReport"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="160dp"
-        android:layout_marginTop="68dp"
-        android:text="Report"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
 </androidx.constraintlayout.widget.ConstraintLayout>
